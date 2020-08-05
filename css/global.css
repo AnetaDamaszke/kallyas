@@ -5,7 +5,8 @@
 
 :root {
     --color-primary: #535353;
-    --color-accent: #1fe8cd;;
+    --color-accent: #1fe8cd;
+    --color-dark-accent: #17a895;
     --color-light: #f5f5f5;
 }
 
