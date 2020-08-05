@@ -6,69 +6,124 @@
     <meta name="description" content="KALLYAS - challenge#2 z YouCode">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kallyas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/container.css">
+    <link rel="stylesheet" href="css/banner.css">
+    <link rel="stylesheet" href="css/navigation.css">
 </head>
 
 <body>
  
     <!--BANNER-->
 
-    <section>
-        <h1>10x</h1>
-        <h1>Buisness conference</h1>
-        <h2>02.20.2020</h2>
-        <p>The Greatest Entrepreneur Party & Conference on the planet.</p>
-        <button>get your ticket</button>
+    <section id="home" class="banner">
+
+        <div class="banner__color"></div>
+        <div class="container">
+            <div class="banner__text">
+                <div class="banner__text1">
+                    10x
+                </div>
+                <div class="banner__text2">
+                    Buisness conference
+                </div>
+                <div class="banner__text3">
+                    02.20.2020
+                </div>
+                <div class="banner__paragraph">
+                    <p>The Greatest Entrepreneur Party & Conference on the planet.</p>
+                </div>
+                <button href="#" class="banner__button" target="_blank">get your tickets</button>
+            </div>
+        </div>
+        
     </section>
 
     <!--NAWIGACJA-->
 
     <section>
-        <nav>
-            <img src=# alt="">
-            <ul>
-                <li>about event</li>
-                <li>speakers</li>
-                <li>ticket</li>
-                <li>newsletter</li>
-            </ul>
+        <nav class="navigation">
+            <div class="navigation__inner">
+                <a href="#">
+                    <img src="https://youcode.pl/html-css-wyzwanie-2/files/Rectangle-3-copy.png" alt="logo" class="navigation__logo">
+                </a>
+                <ul class="navigation__menu js-navigation__menu">
+                    <li class="navigation__menu-item">
+                        <a data-scroll href="#about" class="navigation__menu-link">
+                            about event
+                        </a>
+                    </li>
+                    <li class="navigation__menu-item">
+                        <a data-scroll href="#speakers" class="navigation__menu-link">
+                            speakers
+                        </a>
+                    </li>
+                    <li class="navigation__menu-item">
+                        <a data-scroll href="#ticket" class="navigation__menu-link">
+                            ticket
+                        </a>
+                    </li>
+                    <li class="navigation__menu-item">
+                        <a data-scroll href="#newsletter" class="navigation__menu-link">
+                            newsletter
+                        </a>
+                    </li>
+                </ul>
+                <button class="navigation__mobile-button js-navigation__mobile-button">
+                    <img src="#" alt="Otwórz / zamknij nawigację" class="navigation__mobile-button-img">
+                </button>
+            </div>
         </nav>
     </section>
 
-    <!--sekcja ABOU EVENT-->
+    <!--sekcja z ZEGAREM-->
 
-    <section>
-        <h2>ABOUT EVENT</h2>
+    <section class="container">
+
+    </section>
+
+    <!--sekcja ABOUT EVENT-->
+
+    <section id="about" class="container">
+        <h3>ABOUT EVENT</h3>
         <p>Staying in shape is one thing, but optimizing your workout for maximum performance is another. 
             If the standard routine for your business needs an update, "10X Growth Conference" is the event 
             for you.</p>
         <p>We have assembled a handpicked team of trainers and leaders, headed up by "Coach" 
             Marc Accetta to put B-league performers on a path to the hall of fame.</p>
+        <img src="https://demo.kallyas.net/conference2/wp-content/uploads/sites/115/2019/08/image-2.jpg" alt="foto">
     </section>
 
     <!--sekcja SPEAKERS-->
 
-    <section>
-        <h2>SPEAKERS</h2>
+    <section id="speakers">
+        <h3>SPEAKERS</h3>
         <p>Maecenas ornare nisl non maximus feugiat. Vivamus et ligula imperdiet, sollicitudin odio nec.</p>
         <a href=#>all speakers</a>
+        <img src="https://demo.kallyas.net/conference2/wp-content/uploads/sites/115/2019/12/speaker_1.jpg" alt="foto">
         <h4>MARK THOMAS</h4>
         <span>CEO at BusinessWRK</span>
+        <img src="https://demo.kallyas.net/conference2/wp-content/uploads/sites/115/2019/12/speaker_2.jpg" alt="foto">
         <h4>KATE WILLIAM</h4>
         <span>CPO at Oracle</span>
+        <img src="https://demo.kallyas.net/conference2/wp-content/uploads/sites/115/2019/12/speaker_3.jpg" alt="foto">
         <h4>ROBERT FRED</h4>
         <span>CSO & BA at Envato</span>
     </section>
 
     <!--sekcja TICKET-->
 
-    <section>
-        <h2>ticket</h2>
+    <section id="ticket" class="container">
+        <h3>ticket</h3>
         <p>Fusce mollis blandit mi vitae accumsan. Suspendisse nunc dolor, vulputate id gravida vitae, 
             fringilla et lacus. Mauris ut metus vitae turpis congue posuere. Nullam aliquam ullamcorper 
             ipsum accumsan efficitur.</p>
         <span>Event starts in :</span>
 
-        <h2>acces ticket</h2>
+        <img src="https://youcode.pl/html-css-wyzwanie-2/files/fingerprint-2.png" alt="img">
+        <h3>acces ticket</h3>
         <span>for one person</span>
         <h1>$29</h1>
         <ul>
@@ -82,8 +137,8 @@
 
     <!--sekcja NEWSLETTER-->
 
-    <section>
-        <h2></h2>newsletter</h2>
+    <section id="newsletter">
+        <h3>newsletter</h3>
         <p>Subscribe to the newsletter to receive the latest informations and news about Kallyas Business 
             Conference.</p>
         <input placeholder="your.address@email.com">
