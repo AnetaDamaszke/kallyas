@@ -94,7 +94,6 @@
 
 .banner__button:hover {
     background-color: var(--color-dark-accent);
-    border: none;
 }
 
 .banner__button-link {
