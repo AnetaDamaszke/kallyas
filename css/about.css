@@ -3,9 +3,6 @@
     font-family: "Open Sans",sans-serif;
 }
 
-.about__left {
-}
-
 .about__haeder {
     text-transform: uppercase;
     font-size: 20px;
@@ -27,7 +24,7 @@
 .about__text {
     color: var(--color-primary);
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 2;
     margin-right: 20px;
 }
@@ -51,16 +48,21 @@
     font-size: 11px;
 }
 
-.about__img-color {
-    background-color: rgba(5, 0, 62, 0.7);
-    z-index: 1;
-}
-
 .about__img {
-    background-image: url(https://demo.kallyas.net/conference2/wp-content/uploads/sites/115/2019/08/image-2.jpg);
+    background-image: url("https://demo.kallyas.net/conference2/wp-content/uploads/sites/115/2019/08/image-2.jpg");
     background-position: center;
     background-repeat: no-repeat;
     width: 120vw;
     height: auto;
     margin-left: 20px;
+    z-index: 0
+}
+
+.about__img::before {
+    content: "";
+    background-color: rgba(5, 0, 62, 0.7);
+    width: 120vw;
+    height: 300px;
+    position: relative;
+    z-index: 999;
 }

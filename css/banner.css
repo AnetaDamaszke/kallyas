@@ -59,8 +59,7 @@
 
 .banner__text2::before {
     content: "";
-    position: absolute;
-    background-image: url(https://youcode.pl/html-css-wyzwanie-2/files/las-vegas-red2.svg);
+    background-image: url("https://youcode.pl/html-css-wyzwanie-2/files/las-vegas-red2.svg");
     background-position: center center;
     background-repeat: no-repeat;
     position: absolute;
