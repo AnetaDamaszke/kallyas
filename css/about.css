@@ -7,6 +7,7 @@
     text-transform: uppercase;
     font-size: 20px;
     padding-bottom: 20px;
+    position: static;
 }
 
 .about__haeder::before {
@@ -45,7 +46,7 @@
     color: white;
     text-transform: uppercase;
     text-decoration: none;
-    font-size: 11px;
+    font-size: 12px;
 }
 
 .about__img {

@@ -1,0 +1,133 @@
+.info__background {
+    background-color: var(--color-light);
+    padding-top: 80px;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 120px;
+}
+
+.info__left {
+    padding-right: 100px;
+}
+
+.info__left-haeder {
+    text-transform: uppercase;
+    font-size: 24px;
+    padding-bottom: 20px;
+}
+
+.info__left-haeder::before {
+    content: "ticket";
+    text-transform: uppercase;
+    font-size: 78px;
+    color: var(--color-dark-light);
+    font-weight: bold;
+    position: relative;
+    top: 10px;
+    right: 60px;
+    z-index: 1;
+}
+
+.info__left-text {
+    color: var(--color-primary);
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 2;
+    margin-right: 20px;
+    margin-bottom: 40px;
+}
+
+.info__counter-text {
+    color: var(--color-accent);
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.info__counter {
+    display: flex;
+    flex-direction: row;
+}
+
+.info__counter-item {
+    background-color: var(--color-accent);
+    text-align: center;
+    color: white;
+    padding: 10px;
+    margin: 40px 10px;
+    width: 100px;
+}
+
+
+.info__counter-number {
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.info__counter-label {
+    text-transform: uppercase;
+}
+
+.info__right {
+    background-color: white;
+    box-shadow: 0 0 50px 0 rgb(211, 210, 210);
+    padding: 30px 60px;
+    width: 100%;
+    margin-left: 100px;
+    text-align: center;
+}
+
+.info__right-img {
+    margin-bottom: 10px;
+}
+
+.info__right-haeder {
+    text-transform: uppercase;
+    font-size: 24px;
+    line-height: 0.1;
+}
+
+.info__right-text {
+    text-transform: uppercase;
+    color: var(--color-grey);
+    font-size: 14px;
+    line-height: 1;
+}
+
+.info__right-price {
+    color: var(--color-accent);
+    font-size: 72px;
+    line-height: 0.1;
+}
+
+.info__list-items {
+    list-style: none;
+    text-transform: uppercase;
+    color: var(--color-grey);
+    font-size: 14px;
+    line-height: 2.5;
+    margin: 20px auto;
+    padding-left: 0;
+}
+
+.info__button {
+    cursor: pointer;
+    background-color: var(--color-accent);
+    border: none;
+    padding: 18px 55px;
+    transition: 0.5s
+}
+
+.info__button:hover {
+    background-color: var(--color-dark-accent);
+}
+
+.info__button-link {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 12px;
+}

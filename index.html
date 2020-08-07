@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="css/counter.css">
     <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="css/info.css">
 </head>
 
 <body>
@@ -142,7 +143,7 @@
         </div>
     </section>
 
-    <!--sekcja SPEAKERS-->
+    <!--sekcja GALERIA-->
 
     <section id="speakers" class="gallery__full-width">
         <div class="gallery__text">
@@ -164,26 +165,52 @@
         </div>
     </section>
 
-    <!--sekcja TICKET-->
+    <!--sekcja INFO-->
 
-    <section id="ticket" class="container">
-        <h3>ticket</h3>
-        <p>Fusce mollis blandit mi vitae accumsan. Suspendisse nunc dolor, vulputate id gravida vitae, 
-            fringilla et lacus. Mauris ut metus vitae turpis congue posuere. Nullam aliquam ullamcorper 
-            ipsum accumsan efficitur.</p>
-        <span>Event starts in :</span>
-
-        <img src="https://youcode.pl/html-css-wyzwanie-2/files/fingerprint-2.png" alt="img">
-        <h3>acces ticket</h3>
-        <span>for one person</span>
-        <h1>$29</h1>
-        <ul>
-            <li>event access</li>
-            <li>catering food</li>
-            <li>talk with speakers</li>
-            <li>bonus + 2 free access to future events</li>
-        </ul>
-        <button>buy ticket</button>
+    <section id="ticket" class="info__background">
+        <div class="info container">
+            <div class="info__left">
+                <h3 class="info__left-haeder">ticket</h3>
+                <p class="info__left-text">Fusce mollis blandit mi vitae accumsan. Suspendisse nunc dolor, vulputate id gravida vitae, 
+                fringilla et lacus. Mauris ut metus vitae turpis congue posuere. Nullam aliquam ullamcorper 
+                ipsum accumsan efficitur.</p>
+                <span class="info__counter-text">Event starts in:</span>
+                <div class="info__counter">
+                    <div class="info__counter-item">
+                        <div class="info__counter-number">203</div>
+                        <div class="info__counter-label">days</div>
+                    </div>
+                    <div class="info__counter-item">
+                        <div class="info__counter-number">2</div>
+                        <div class="info__counter-label">hours</div>
+                    </div>
+                    <div class="info__counter-item">
+                        <div class="info__counter-number">50</div>
+                        <div class="info__counter-label">min</div>
+                    </div>
+                    <div class="info__counter-item">
+                        <div class="info__counter-number">7</div>
+                        <div class="info__counter-label">sec</div>
+                    </div>    
+                </div>
+            </div>
+            
+            <div class="info__right">
+                <img src="https://youcode.pl/html-css-wyzwanie-2/files/fingerprint-2.png" alt="img" class="info__right-img">
+                <h3 class="info__right-haeder">acces ticket</h3>
+                <span class="info__right-text">for one person</span>
+                <h1 class="info__right-price">$29</h1>
+                <ul class="info__list-items">
+                    <li class="info__list-item">event access</li>
+                    <li class="info__list-item">catering food</li>
+                    <li class="info__list-item">talk with speakers</li>
+                    <li class="info__list-item">bonus + 2 free access<br>to future events</li>
+                </ul>
+                <button class="info__button">
+                    <a href="#" class="info__button-link">buy ticket</a>
+                </button>
+            </div>
+        </div>   
     </section>
 
     <!--sekcja NEWSLETTER-->
