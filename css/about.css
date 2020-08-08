@@ -3,11 +3,20 @@
     font-family: "Open Sans",sans-serif;
 }
 
+@media (max-width: 399px) {
+    .about {
+        flex-wrap: wrap;
+    }
+}
+
+.about-left {
+    padding-top: 80px;
+}
+
 .about__haeder {
     text-transform: uppercase;
     font-size: 20px;
-    padding-bottom: 20px;
-    position: static;
+    position: relative;
 }
 
 .about__haeder::before {
@@ -16,10 +25,16 @@
     font-size: 78px;
     color: var(--color-light);
     font-weight: bold;
-    position: relative;
-    top: 90px;
-    right: 60px;
+    position: absolute;
+    top: -40px;
+    right: 320px;
     z-index: -1;
+}
+
+@media (max-width: 399px) {
+    .about__haeder::before {
+        right: 120px;
+    }
 }
 
 .about__text {
@@ -28,6 +43,7 @@
     font-weight: 300;
     line-height: 2;
     margin-right: 20px;
+    margin-bottom: 40px;
 }
 
 .about__button {
@@ -53,17 +69,25 @@
     background-image: url("https://demo.kallyas.net/conference2/wp-content/uploads/sites/115/2019/08/image-2.jpg");
     background-position: center;
     background-repeat: no-repeat;
-    width: 120vw;
-    height: auto;
-    margin-left: 20px;
+    width: 130vw;
+    height: 415px;
+    margin-left: 30px;
+    margin-top: 40px;
+    position: relative;
     z-index: 0
+}
+
+@media (max-width: 399px) {
+    .about__img {
+        margin: 40px 0;
+    }
 }
 
 .about__img::before {
     content: "";
     background-color: rgba(5, 0, 62, 0.7);
-    width: 120vw;
-    height: 300px;
-    position: relative;
+    width: 100%;
+    height: 415px;
+    position: absolute;
     z-index: 999;
 }

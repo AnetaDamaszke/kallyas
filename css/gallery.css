@@ -1,19 +1,32 @@
 .gallery__full-width {
+    background-color: rgba(5, 0, 62, 0.7);
     margin-top: 100px;
-    margin-bottom: 0;
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 500px;
+    height: 100%;
     position: relative;
 }
 
-.gallery__full-width::after {
+@media (max-width: 1024px) {
+    .gallery__full-width {
+        margin-top: 60px;
+    }
+}
+
+@media (max-width: 399px) {
+    .gallery__full-width {
+        flex-direction: column;
+    }
+}
+
+.gallery__full-width::before {
     content: "";
     background-color: rgba(5, 0, 62, 0.7);
-    height: 500px;
+    height: 100%;
     width: 100%;
-    position: relative;
+    position: absolute;
+    z-index: 5;
 }
 
 .gallery__text {
@@ -25,7 +38,29 @@
     padding-top: 80px;
     padding-bottom: 80px;
     padding-right: 40px;
-    padding-left: 100px;
+    padding-left: 130px;
+    z-index: 3;
+}
+
+@media (max-width: 1024px) {
+    .gallery__text {
+        padding-left: 80px;
+    }
+}
+
+@media (max-width: 768px) {
+    .gallery__text {
+        padding: 80px 20px;
+
+    }
+}
+
+@media (max-width: 399px) {
+    .gallery__text {
+        text-align: center;
+        padding: 80px 0;
+        margin: 0;
+    }
 }
 
 .gallery__text-haeder {
@@ -33,17 +68,26 @@
     font-size: 26px;
     font-weight: bold;
     text-transform: uppercase;
+    position: relative;
+    z-index: 9;
 }
 
 .gallery__text-haeder::before {
     content: "speakers";
     text-transform: uppercase;
-    font-size: 78px;
+    font-size: 96px;
     color: var(--color-light);
     font-weight: bold;
-    position: relative;
-    z-index: 0;
-    right: 200px;
+    position: absolute;
+    top: -50px;
+    right: -170px;
+    z-index: -1;
+}
+
+@media (max-width: 1024px) {
+    .gallery__text-haeder::before {
+        right: -250px;
+    }
 }
 
 .gallery__text-content {
@@ -51,12 +95,16 @@
     font-size: 18px;
     font-weight: 300;
     line-height: 2;
+    z-index: 8;
+    padding-bottom: 30px;
 }
 
 .gallery__link {
     color: var(--color-accent);
     text-decoration: none;
     text-transform: uppercase;
+    z-index: 7;
+    cursor: pointer;
 }
 
 .gallery__box {
@@ -67,6 +115,7 @@
     width: 25%;
     padding: 30px 60px;
     justify-content: flex-end;
+    z-index: 4;
 }
 
 .gallery__img1 {
@@ -86,10 +135,11 @@
     text-transform: uppercase;
     font-size: 14px;
     margin: 5px 0;
+    z-index: 6;
 }
-
-
 
 .gallery__info {
     color: white;
+    z-index: 6;
+
 }

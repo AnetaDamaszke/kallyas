@@ -1,14 +1,23 @@
 .newsletter {
     text-align: center;
-    width: 600px;
+    width: 100%;
     margin: 0 auto;
     padding-bottom: 100px;
 }
 
 .newsletter__haeder {
     text-transform: uppercase;
+    padding-top: 120px;
     font-size: 24px;
     padding-bottom: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+@media (max-width: 399px) {
+    .newsletter__haeder {
+        padding-top: 60px;
+    }
 }
 
 .newsletter__haeder::before {
@@ -17,17 +26,33 @@
     font-size: 78px;
     color: var(--color-light);
     font-weight: bold;
-    position: relative;
-    top: 15px;
-    z-index: 1;
+    position: absolute;
+    top: 80px;
+    right: 50px;
+    z-index: -1;
+}
+
+@media (max-width: 399px) {
+    .newsletter__haeder::before {
+        top: 20px;
+        right: 0;
+    }
 }
 
 .newsletter__text {
     color: var(--color-primary);
+    width: 600px;
     font-size: 18px;
     font-weight: 300;
     line-height: 2;
     margin-right: 20px;
+}
+
+@media (max-width: 399px) {
+    .newsletter__text {
+        width: 100%;
+        margin-bottom: 40px;
+    }
 }
 
 .newsletter__input {
@@ -41,6 +66,12 @@
     text-align: left;
     margin-right: 5px;
     padding-left: 20px;
+}
+
+@media (max-width: 399px) {
+    .newsletter__input {
+        width: auto;
+    }
 }
 
 .newsletter__button {

@@ -1,6 +1,6 @@
 .info__background {
     background-color: var(--color-light);
-    padding-top: 80px;
+    padding-top: 100px;
 }
 
 .info {
@@ -9,14 +9,30 @@
     padding-bottom: 120px;
 }
 
+@media (max-width: 399px) {
+    .info {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 120px;
+    }
+}
+
 .info__left {
     padding-right: 100px;
+}
+
+@media (max-width: 399px) {
+    .info__left {
+        padding-right: 0;
+    }
 }
 
 .info__left-haeder {
     text-transform: uppercase;
     font-size: 24px;
     padding-bottom: 20px;
+    position: relative;
+    z-index: 1;
 }
 
 .info__left-haeder::before {
@@ -25,10 +41,22 @@
     font-size: 78px;
     color: var(--color-dark-light);
     font-weight: bold;
-    position: relative;
-    top: 10px;
-    right: 60px;
-    z-index: 1;
+    position: absolute;
+    top: -40px;
+    right: 310px;
+    z-index: -1;
+}
+
+@media (max-width: 768px) {
+    .info__left-haeder::before {
+        right: 210px;
+    }
+}
+
+@media (max-width: 399px) {
+    .info__left-haeder::before {
+        right: 110px;
+    }
 }
 
 .info__left-text {
@@ -60,11 +88,30 @@
     width: 100px;
 }
 
+@media (max-width: 768px) {
+    .info__counter-item {
+        width: 80px;
+        margin: 30px 10px;
+    }
+}
+
+@media (max-width: 399px) {
+    .info__counter-item {
+        width: 80px;
+        margin: 30px 5px;
+    }
+}
 
 .info__counter-number {
     font-size: 48px;
     font-weight: 600;
     margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .info__counter-number {
+        font-size: 36px;
+    }
 }
 
 .info__counter-label {
@@ -74,10 +121,25 @@
 .info__right {
     background-color: white;
     box-shadow: 0 0 50px 0 rgb(211, 210, 210);
-    padding: 30px 60px;
+    padding: 30px 80px;
     width: 100%;
     margin-left: 100px;
     text-align: center;
+}
+
+@media (max-width: 1024px) {
+    .info__right {
+        padding: 30px 50px;
+        margin-left: 0;
+        margin-bottom: 80px;
+    }
+}
+
+@media (max-width: 768px) {
+    .info__right {
+        padding: 30px 20px;
+        margin-bottom: 40px;
+    }
 }
 
 .info__right-img {
@@ -100,7 +162,7 @@
 .info__right-price {
     color: var(--color-accent);
     font-size: 72px;
-    line-height: 0.1;
+    line-height: 1;
 }
 
 .info__list-items {
@@ -108,9 +170,19 @@
     text-transform: uppercase;
     color: var(--color-grey);
     font-size: 14px;
-    line-height: 2.5;
-    margin: 20px auto;
     padding-left: 0;
+}
+
+.info__list-item {
+    line-height: 1.5;
+    margin: 20px auto;
+    padding: 0 40px;
+}
+
+@media (max-width: 1024px) {
+    .info__list-item {
+        padding: 0 10px;
+    }
 }
 
 .info__button {
@@ -118,6 +190,7 @@
     background-color: var(--color-accent);
     border: none;
     padding: 18px 55px;
+    margin-bottom: 20px;
     transition: 0.5s
 }
 
