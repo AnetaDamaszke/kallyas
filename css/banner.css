@@ -132,15 +132,14 @@
     position: absolute;
     width: 260px;
     height: 80px;
-    top: 40px;
-    left: 460px;
+    top: 25px;
+    left: 320px;
     z-index: 999;
 }
 
 @media (max-width: 768px) {
     .banner__text2::before {
         left: 300px;
-        top: 55px;
     }
 }
 
@@ -172,8 +171,6 @@
 
 @media (max-width: 399px) {
     .banner__paragraph {
-        font-family: "Open Sans", sans-serif;
-        font-size: 18px;
         margin-bottom: 60px;
     }
 }

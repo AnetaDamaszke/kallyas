@@ -1,8 +1,14 @@
 .newsletter {
     text-align: center;
-    width: 100%;
+    width: 600px;
     margin: 0 auto;
     padding-bottom: 100px;
+}
+
+@media (max-width: 399px) {
+    .newsletter {
+        width: 100%;
+    }
 }
 
 .newsletter__haeder {
@@ -41,7 +47,7 @@
 
 .newsletter__text {
     color: var(--color-primary);
-    width: 600px;
+    width: 100%;
     font-size: 18px;
     font-weight: 300;
     line-height: 2;
@@ -50,7 +56,6 @@
 
 @media (max-width: 399px) {
     .newsletter__text {
-        width: 100%;
         margin-bottom: 40px;
     }
 }

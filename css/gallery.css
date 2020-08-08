@@ -17,6 +17,7 @@
 @media (max-width: 399px) {
     .gallery__full-width {
         flex-direction: column;
+        width: auto;
     }
 }
 
